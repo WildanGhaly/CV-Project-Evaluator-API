@@ -4,4 +4,4 @@ ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app
-CMD [""celery"", ""-A"", ""app.workers.celery_app:celery_app"", ""worker"", ""--loglevel=INFO""]
+CMD ["celery", "-A", "app.workers.celery_app:celery_app", "worker", "--loglevel=INFO"]
