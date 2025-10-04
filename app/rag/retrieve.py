@@ -1,1 +1,2 @@
-﻿# TODO: implement top-k retrieval with filters (doc_type, section)
+﻿# Minimal placeholder for future vector retrieval.
+# For now, services.evaluation loads raw texts from data/system_docs.

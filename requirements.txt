@@ -11,5 +11,8 @@ pdfminer.six
 python-ulid
 tenacity
 sqlalchemy
+alembic
 pytest
 ruff
+openai>=1.40.0
+python-dotenv

@@ -1,8 +1,11 @@
 ﻿from celery import Celery
-import os
+from app.config import settings
 
 celery_app = Celery(
-    ""evaluator"",
-    broker=os.getenv(""REDIS_URL"", ""redis://localhost:6379/0""),
-    backend=os.getenv(""REDIS_URL"", ""redis://localhost:6379/0""),
+    "evaluator",
+    broker=settings.redis_url,
+    backend=settings.redis_url,
 )
+
+# Make sure tasks auto-discover works in Docker
+celery_app.autodiscover_tasks(["app.workers"])

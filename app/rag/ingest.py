@@ -1,6 +1,7 @@
-﻿def run():
-    # TODO: load PDFs â†’ split â†’ embed â†’ upsert to vector DB
-    print(""ingest complete"")
+﻿# Minimal placeholder. Later: split PDFs → embed → upsert into Qdrant/Chroma.
 
-if __name__ == ""__main__ "":
+def run():
+    print("ingest complete (placeholder)")
+
+if __name__ == "__main__":
     run()
