@@ -1,0 +1,15 @@
+﻿fastapi
+uvicorn[standard]
+pydantic
+httpx
+celery
+redis
+qdrant-client
+chromadb
+pymupdf
+pdfminer.six
+python-ulid
+tenacity
+sqlalchemy
+pytest
+ruff
