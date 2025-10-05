@@ -208,3 +208,8 @@ __marimo__/
 
 # vscode
 .vscode/
+.cursor/
+
+# uploaded pdf
+data/uploads
+app.db

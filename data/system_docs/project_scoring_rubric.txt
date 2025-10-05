@@ -1,0 +1,54 @@
+Project Deliverable Evaluation - Scoring Rubric
+(1-5 scale per parameter)
+
+Project Score: Weighted Average (1–5)
+
+Parameter: Correctness (Prompt & Chaining) (Weight: 30%)
+Description: Implements prompt design, LLM chaining, RAG context injection
+Scoring Guide:
+• 1 = Not implemented
+• 2 = Minimal attempt
+• 3 = Works partially
+• 4 = Works correctly
+• 5 = Fully correct + thoughtful
+
+Parameter: Code Quality & Structure (Weight: 25%)
+Description: Clean, modular, reusable, tested
+Scoring Guide:
+• 1 = Poor
+• 2 = Some structure
+• 3 = Decent modularity
+• 4 = Good structure + some tests
+• 5 = Excellent quality + strong tests
+
+Parameter: Resilience & Error Handling (Weight: 20%)
+Description: Handles long jobs, retries, randomness, API failures
+Scoring Guide:
+• 1 = Missing
+• 2 = Minimal
+• 3 = Partial handling
+• 4 = Solid handling
+• 5 = Robust, production-ready
+
+Parameter: Documentation & Explanation (Weight: 15%)
+Description: README clarity, setup instructions, trade-off explanations
+Scoring Guide:
+• 1 = Missing
+• 2 = Minimal
+• 3 = Adequate
+• 4 = Clear
+• 5 = Excellent + insightful
+
+Parameter: Creativity / Bonus (Weight: 10%)
+Description: Extra features beyond requirements
+Scoring Guide:
+• 1 = None
+• 2 = Very basic
+• 3 = Useful extras
+• 4 = Strong enhancements
+• 5 = Outstanding creativity
+
+Overall Evaluation:
+Calculate weighted average: (Correctness × 0.30) + (Code Quality × 0.25) + (Resilience × 0.20) + (Documentation × 0.15) + (Creativity × 0.10)
+Result is on a 1-5 scale.
+

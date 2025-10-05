@@ -1,6 +1,8 @@
 ﻿fastapi
+python-multipart
 uvicorn[standard]
 pydantic
+pydantic-settings
 httpx
 celery
 redis
@@ -11,5 +13,8 @@ pdfminer.six
 python-ulid
 tenacity
 sqlalchemy
+alembic
 pytest
 ruff
+openai>=1.40.0
+python-dotenv
