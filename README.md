@@ -2,6 +2,19 @@
 
 An AI-powered backend service that automates initial screening of job applications. This system evaluates a candidate's CV and project report against job descriptions and scoring rubrics using LLM chaining and RAG (Retrieval-Augmented Generation).
 
+## 🖼️ Frontend Screenshots
+
+### Loading Screen
+*Waiting for evaluation results to be processed...*
+
+![Loading Screen](img/Loading.png)
+
+### Evaluation Results
+*Comprehensive scoring and detailed feedback for CV and project evaluation*
+
+![Result First Page](img/Result_First%20Page.png)
+![Result Second Page](img/Result_Second%20Page.png)
+
 ## Features
 
 - ✅ **Multi-stage LLM Pipeline**: CV evaluation → Project evaluation → Final aggregation
