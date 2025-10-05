@@ -1,0 +1,45 @@
+CV Match Evaluation - Scoring Rubric
+(1-5 scale per parameter)
+
+CV Match Rate: Weighted Average (1–5) → Convert to 0-1 decimal (×0.2)
+
+Parameter: Technical Skills Match (Weight: 40%)
+Description: Alignment with job requirements (backend, databases, APIs, cloud, AI/LLM)
+Scoring Guide:
+• 1 = Irrelevant skills
+• 2 = Few overlaps
+• 3 = Partial match
+• 4 = Strong match
+• 5 = Excellent match + AI/LLM exposure
+
+Parameter: Experience Level (Weight: 25%)
+Description: Years of experience and project complexity
+Scoring Guide:
+• 1 = <1 yr / trivial projects
+• 2 = 1–2 yrs
+• 3 = 2–3 yrs with mid-scale projects
+• 4 = 3–4 yrs solid track record
+• 5 = 5+ yrs / high-impact projects
+
+Parameter: Relevant Achievements (Weight: 20%)
+Description: Impact of past work (scaling, performance, adoption)
+Scoring Guide:
+• 1 = No clear achievements
+• 2 = Minimal improvements
+• 3 = Some measurable outcomes
+• 4 = Significant contributions
+• 5 = Major measurable impact
+
+Parameter: Cultural / Collaboration Fit (Weight: 15%)
+Description: Communication, learning mindset, teamwork/leadership
+Scoring Guide:
+• 1 = Not demonstrated
+• 2 = Minimal
+• 3 = Average
+• 4 = Good
+• 5 = Excellent and well-demonstrated
+
+Overall Evaluation:
+Calculate weighted average: (Technical Skills × 0.40) + (Experience Level × 0.25) + (Achievements × 0.20) + (Cultural Fit × 0.15)
+Then convert to 0-1 decimal scale by dividing by 5.
+
