@@ -23,9 +23,9 @@ class LLMClient:
     @retry(
         stop=stop_after_attempt(3),
         wait=wait_exponential(multiplier=1, min=2, max=10),
-        retry=retry_if_exception_type((APIError, APITimeoutError, RateLimitError)),
+        retry=retry_if_exception_type((APITimeoutError, RateLimitError)),
     )
-    def eval_json(self, prompt: str, system: str = "", temperature: float = 0.3) -> dict:
+    def eval_json(self, prompt: str, system: str = "", temperature: float | None = None) -> dict:
         """
         Return JSON from the model with retry logic.
         
@@ -42,6 +42,10 @@ class LLMClient:
         """
         if not self.enabled or not self.client:
             raise Exception("LLM client not available. Check OPENAI_API_KEY configuration.")
+        
+        # Use configured temperature if not specified
+        if temperature is None:
+            temperature = settings.openai_temperature
         
         try:
             logger.info(f"Calling OpenAI API with model={self.model}, temp={temperature}")
@@ -70,11 +74,11 @@ class LLMClient:
         except json.JSONDecodeError as e:
             logger.error(f"Failed to parse JSON from LLM response: {e}")
             raise Exception(f"Invalid JSON response from model: {e}")
-        except (APIError, APITimeoutError, RateLimitError) as e:
+        except (APITimeoutError, RateLimitError) as e:
             logger.warning(f"OpenAI API error (will retry): {e}")
             raise
         except Exception as e:
-            logger.error(f"Unexpected error in LLM call: {e}")
+            logger.error(f"LLM call failed: {e}")
             raise
 
     @retry(

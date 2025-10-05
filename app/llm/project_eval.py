@@ -46,11 +46,10 @@ def evaluate_project(project_text: str, llm_client: LLMClient) -> dict:
             scoring_rubric=scoring_rubric
         )
         
-        # Call LLM with structured JSON output
+        # Call LLM with structured JSON output (uses configured temperature)
         result = llm_client.eval_json(
             prompt=prompt,
-            system=PROJECT_EVALUATION_SYSTEM,
-            temperature=0.3  # Low temperature for consistency
+            system=PROJECT_EVALUATION_SYSTEM
         )
         
         logger.info(f"Project evaluation completed: score={result.get('project_score', 0)}")

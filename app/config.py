@@ -14,7 +14,9 @@ class Settings(BaseSettings):
 
     # Optional LLM settings
     openai_api_key: str | None = None
-    openai_model: str = "gpt-4o-mini"
+    openai_model: str = "gpt-5-2025-08-07"
+    # Temperature for LLM calls (1.0 for o1/o3/gpt-5 models, 0.3-0.7 for gpt-4)
+    openai_temperature: float = 1.0
 
     class Config:
         env_file = ".env"

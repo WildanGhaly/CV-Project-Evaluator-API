@@ -47,11 +47,10 @@ def evaluate_cv(cv_text: str, job_title: str, llm_client: LLMClient) -> dict:
             scoring_rubric=scoring_rubric
         )
         
-        # Call LLM with structured JSON output
+        # Call LLM with structured JSON output (uses configured temperature)
         result = llm_client.eval_json(
             prompt=prompt,
-            system=CV_EVALUATION_SYSTEM,
-            temperature=0.3  # Low temperature for consistency
+            system=CV_EVALUATION_SYSTEM
         )
         
         logger.info(f"CV evaluation completed: match_rate={result.get('cv_match_rate', 0)}")

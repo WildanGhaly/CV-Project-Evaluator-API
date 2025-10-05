@@ -1,10 +1,9 @@
 Job Description - Product Engineer (Backend)
-Rakamin 2025
 
 About the Job
 You'll be building new product features alongside a frontend engineer and product manager using our Agile methodology, as well as addressing issues to ensure our apps are robust and our codebase is clean. As a Product Engineer, you'll write clean, efficient code to enhance our product's codebase in meaningful ways.
 
-In addition to classic backend work, this role also touches on building AI-powered systems, where you'll design and orchestrate how large language models (LLMs) integrate into Rakamin's product ecosystem.
+In addition to classic backend work, this role also touches on building AI-powered systems, where you'll design and orchestrate how large language models (LLMs) integrate into Company's product ecosystem.
 
 Key Responsibilities:
 • Collaborating with frontend engineers and 3rd parties to build robust backend solutions that support highly configurable platforms and cross-platform integration.

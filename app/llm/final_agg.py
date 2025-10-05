@@ -34,11 +34,10 @@ def aggregate_results(cv_result: dict, project_result: dict, job_title: str, llm
             job_title=job_title
         )
         
-        # Call LLM with structured JSON output
+        # Call LLM with structured JSON output (uses configured temperature)
         result = llm_client.eval_json(
             prompt=prompt,
-            system=FINAL_AGGREGATION_SYSTEM,
-            temperature=0.4  # Slightly higher for more natural summary
+            system=FINAL_AGGREGATION_SYSTEM
         )
         
         logger.info(f"Final aggregation completed: overall_score={result.get('overall_score', 0)}")
